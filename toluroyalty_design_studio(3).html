@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="TOLUROYALTY DESIGN STUDIO — luxury graphic design and creative branding. Designed for Greatness.">
+  <title>TOLUROYALTY DESIGN STUDIO | Designed for Greatness</title>
+  <style>
+    :root{--gold:#d6b46a;--gold2:#f1d99c;--bg:#090909;--panel:#141414;--muted:#b9b4a9;--white:#f8f6f0}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none} button,input,textarea,select{font:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#090909ed;border-bottom:1px solid #29241a;backdrop-filter:blur(12px)}
+    nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{font-weight:900;letter-spacing:1.4px;color:var(--gold);font-size:1.05rem}
+    .brand small{display:block;color:#eee;font-size:.62rem;letter-spacing:2.6px;font-weight:500}
+    .links{display:flex;gap:22px;align-items:center;font-size:.9rem;color:#ddd}
+    .links a:hover{color:var(--gold)}
+    .menu{display:none;background:none;border:1px solid #66532c;color:var(--gold);padding:7px 11px;border-radius:8px}
+    .btn{display:inline-block;background:var(--gold);color:#111;padding:12px 19px;border-radius:7px;font-weight:800;border:0;cursor:pointer}
+    .btn:hover{background:var(--gold2);transform:translateY(-1px)}
+    .btn.outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+    .hero{padding:100px 0 88px;background:radial-gradient(ellipse at 80% 20%,#49381955,transparent 40%),linear-gradient(135deg,#111,#080808 70%)}
+    .eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:3px;font-size:.76rem;font-weight:800}
+    h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:1.02;max-width:850px;margin:18px 0}
+    h1 span,.gold{color:var(--gold)}
+    .hero p{max-width:610px;color:#c9c4b9;font-size:1.08rem}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-note{margin-top:46px;color:#928b7d;font-size:.83rem}
+    section{padding:76px 0}
+    .section-head{max-width:680px;margin-bottom:32px}
+    h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:8px 0 12px}
+    .section-head p,.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--panel);border:1px solid #302a1d;border-radius:14px;padding:24px}
+    .symbol{width:43px;height:43px;border:1px solid #806632;border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:1.25rem;margin-bottom:15px}
+    .card h3{margin:5px 0 8px}.card p{color:var(--muted);font-size:.94rem;margin:0}
+    .about{background:#101010}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
+    .brand-panel{border:1px solid #6e572d;border-radius:18px;padding:34px;background:linear-gradient(145deg,#1b1b1b,#0b0b0b);text-align:center}
+    .crown{font-size:3rem;color:var(--gold)}
+    .brand-panel strong{display:block;color:var(--gold);font-size:1.65rem;letter-spacing:2px}
+    .brand-panel span{font-size:.75rem;letter-spacing:3px}
+    .checks{padding:0;list-style:none}.checks li{margin:12px 0;color:#ddd}.checks li:before{content:"✦";color:var(--gold);margin-right:10px}
+    .process{counter-reset:step}
+    .step{position:relative;padding-left:56px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:bold}
+    .contact{background:linear-gradient(140deg,#17130b,#0a0a0a 65%)}
+    .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px}
+    form{display:grid;gap:13px}
+    label{font-size:.88rem;color:#e6dfd0}
+    input,textarea,select{width:100%;margin-top:5px;padding:12px 13px;border:1px solid #48402f;border-radius:8px;background:#0b0b0b;color:#fff;outline:none}
+    input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+    textarea{min-height:115px;resize:vertical}
+    .contact-info p{color:var(--muted)}
+    .contact-line{margin:18px 0;padding:14px;border:1px solid #383020;border-radius:9px}
+    footer{padding:25px 0;border-top:1px solid #302a1d;color:#9e988b;font-size:.85rem}
+    footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .notice{font-size:.8rem;color:#a69d8c}
+    @media(max-width:760px){
+      .links{display:none;position:absolute;top:73px;left:0;right:0;background:#101010;padding:18px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #332a19}
+      .links.open{display:flex}.menu{display:block}.nav-cta{display:none}
+      .grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}
+      .hero{padding:76px 0 65px}section{padding:60px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#home">♛ TOLUROYALTY <small>DESIGN STUDIO</small></a>
+      <button class="menu" id="menuBtn" aria-label="Open navigation" aria-expanded="false">MENU</button>
+      <div class="links" id="navLinks">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#process">How it works</a><a href="#contact">Contact</a>
+      </div>
+      <a class="btn nav-cta" href="#contact">Get a design</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">Creative thinking • Premium design</div>
+      <h1>Make your brand<br><span>impossible to ignore.</span></h1>
+      <p>TOLUROYALTY DESIGN STUDIO creates polished visual designs that help businesses, organisations and individuals present their ideas with confidence.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Start a project</a>
+        <a class="btn outline" href="#services">Explore services</a>
+      </div>
+      <div class="hero-note">DESIGNED FOR GREATNESS.</div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we do</div>
+        <h2>Design that gives your ideas a <span class="gold">strong identity.</span></h2>
+        <p>Creative services for businesses, events, schools and personal brands. Tell us what you need and we can discuss the best approach.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="symbol">✧</div><h3>Flyer & Poster Design</h3><p>Promotional flyers, event posters, announcements and adverts designed to communicate clearly.</p></article>
+        <article class="card"><div class="symbol">♛</div><h3>Logo & Brand Identity</h3><p>Distinctive logo concepts and coordinated visual styles to help your brand look consistent.</p></article>
+        <article class="card"><div class="symbol">▣</div><h3>Social Media Graphics</h3><p>Digital graphics for social posts, promotions, launches and business updates.</p></article>
+        <article class="card"><div class="symbol">▤</div><h3>Business Materials</h3><p>Business cards, simple profiles, menus, price lists and other branded materials.</p></article>
+        <article class="card"><div class="symbol">◇</div><h3>School & Event Designs</h3><p>Admission adverts, school programmes, celebration designs and event materials.</p></article>
+        <article class="card"><div class="symbol">✦</div><h3>Custom Design Requests</h3><p>Have a different idea? Share your brief and we will discuss a suitable design solution.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <div class="eyebrow">About the studio</div>
+        <h2>Thoughtful design. <span class="gold">Memorable presentation.</span></h2>
+        <p class="muted">TOLUROYALTY DESIGN STUDIO is a creative design brand focused on helping clients communicate through attractive, clear and professional visuals.</p>
+        <ul class="checks">
+          <li>Designs shaped around your brief</li>
+          <li>Clear communication throughout the project</li>
+          <li>Attention to layout, colour and readability</li>
+          <li>Digital-ready designs for online sharing</li>
+        </ul>
+      </div>
+      <div class="brand-panel">
+        <div class="crown">♛</div>
+        <strong>TOLUROYALTY</strong>
+        <span>DESIGN STUDIO</span>
+        <p class="gold" style="margin-top:24px;letter-spacing:2px">DESIGNED FOR GREATNESS</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Simple process</div>
+        <h2>From idea to <span class="gold">finished design.</span></h2>
+        <p class="muted">A straightforward process keeps your project organised.</p>
+      </div>
+      <div class="grid process">
+        <article class="card step"><h3>Send your brief</h3><p>Explain what you need, your preferred style, wording and deadline.</p></article>
+        <article class="card step"><h3>Confirm the details</h3><p>We discuss the scope, price, delivery time and any materials required before work begins.</p></article>
+        <article class="card step"><h3>Review & receive</h3><p>Review the agreed design, request any agreed adjustments and receive the final files.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow">Let's work together</div>
+        <h2>Have a project in mind?</h2>
+        <p>Send a message with a few details. We will get back to you to discuss your project.</p>
+        <div class="contact-line"><strong class="gold">Email</strong><br><a href="mailto:toluwalopeajayi12@gmail.com">toluwalopeajayi12@gmail.com</a></div>
+        <div class="contact-line"><strong class="gold">WhatsApp / Phone</strong><br><a href="https://wa.me/2348156859118" target="_blank" rel="noopener">+234 815 685 9118</a></div>
+        <p class="notice">Please confirm project scope, price and delivery date before payment.</p>
+      </div>
+      <div class="card">
+        <form id="projectForm">
+          <label>Your name<input id="customerName" required maxlength="80" placeholder="Enter your name"></label>
+          <label>Email address<input id="customerEmail" type="email" required maxlength="120" placeholder="you@example.com"></label>
+          <label>Service needed
+            <select id="service" required>
+              <option value="">Choose a service</option>
+              <option>Flyer & Poster Design</option><option>Logo & Brand Identity</option><option>Social Media Graphics</option><option>Business Materials</option><option>School & Event Designs</option><option>Custom Design Request</option>
+            </select>
+          </label>
+          <label>Project details<textarea id="details" required maxlength="1200" placeholder="Describe what you would like us to design..."></textarea></label>
+          <button class="btn" type="submit">Send project enquiry via WhatsApp</button>
+          <p class="notice">This form opens WhatsApp with your message ready to send. It does not store customer details on this website.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> TOLUROYALTY DESIGN STUDIO. All rights reserved.</span>
+    <span class="gold">Designed for Greatness.</span>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(isOpen));
+  });
+  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('projectForm').addEventListener('submit', event => {
+    event.preventDefault();
+    const name = document.getElementById('customerName').value.trim();
+    const email = document.getElementById('customerEmail').value.trim();
+    const service = document.getElementById('service').value;
+    const details = document.getElementById('details').value.trim();
+    if (!name || !email || !service || !details) return;
+    const message = `Hello TOLUROYALTY DESIGN STUDIO. I would like to make a project enquiry.%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AService: ${encodeURIComponent(service)}%0AProject details: ${encodeURIComponent(details)}`;
+    window.open(`https://wa.me/2348156859118?text=${message}`, '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
